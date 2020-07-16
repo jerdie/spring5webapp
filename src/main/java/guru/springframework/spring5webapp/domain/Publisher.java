@@ -27,7 +27,12 @@ public class Publisher {
     public Publisher() {
     }
 
-    public Publisher(String address,String city, String state, String zip) {
+    public Publisher(String address,String city, String state, String zip, String name) {
+        this.addressLine1 = address;
+        this.name = name;
+        this.zip = zip;
+        this.state = state;
+        this.city = city;
     }
 
     public Set<Book> getBooks() {
